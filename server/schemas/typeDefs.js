@@ -18,7 +18,7 @@ type User {
   username: String
   email: String
   bookCount: Int
-  savedBook: [Book]
+  savedBooks: [Book]
 }
 
 type Book {
@@ -30,7 +30,7 @@ type Book {
   link: String
 }
 
-type InputBook {
+input InputBook {
   bookId: String
   authors: [String]
   description: String
